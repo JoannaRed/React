@@ -1,7 +1,6 @@
 import React from 'react';
 import List from '../List/List.js';
 import styles from './App.scss';
-//import Hero from '../Hero/Hero.js'
 
 class App extends React.Component {
   render() {
