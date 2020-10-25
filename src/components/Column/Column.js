@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
+//import ReactHtmlParser from 'react-html-parser';
+
+
 
 class Column extends React.Component {
     static propTypes = {
-        column: PropTypes.node.isRequired,
+        column: PropTypes.string,
         
     }
     
