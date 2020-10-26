@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 class Column extends React.Component {
     static propTypes = {
-        column: PropTypes.string,
+        title: PropTypes.string,
         
     }
     
@@ -15,9 +15,7 @@ class Column extends React.Component {
         return (
             <section className={styles.component} >
                 <h3 className={styles.title}>
-                {this.props.column1}
-                {this.props.column2}
-                {this.props.column3}
+                {this.props.title}
                 </h3>
             </section>
     )
