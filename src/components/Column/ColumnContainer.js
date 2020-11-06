@@ -1,11 +1,16 @@
 import {connect} from 'react-redux';
 import Column from './Column';
-
-export const selectCardsForColumn = ({cards}, columnId) => 
-  cards.filter(card => card.columnId == columnId);
+import {createActionAddCard, selectCardsForColumns} from '../../redux/CardsRedux.js';
 
 const mapStateToProps = (state, props) => ({
-  cards: selectCardsForColumn(state, props.id),
+  cards: selectCardsForColumns(state, props.id),
 });
 
-export default connect(mapStateToProps)(Column);
+const mapDispatchToProps = (dispatch, props) => ({
+  addCard: title => dispatch(createActionAddCard ({
+    cardId: props.id,
+    title,
+  })),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps )(Column);
