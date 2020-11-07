@@ -1,7 +1,9 @@
+/* eslint-disable linebreak-style */
+
 import {combineReducers, createStore} from 'redux';
 import initialStoreData from '../src/data/dataStore';
-import columnsReducer from './columnsRedux';
-import cardsReducer from './cardsRedux';
+import ColumnsReducer from '../src/redux/ColumnsRedux.js';
+import CardReducer from '../src/redux/CardsRedux.js';
 
 // define initial state and shallow-merge initial data
 const initialState = {
@@ -14,8 +16,8 @@ const initialState = {
 
 // define reducers
 const reducers = {
-  columns: columnsReducer,
-  cards: cardsReducer,
+  columns: ColumnsReducer,
+  cards: CardReducer,
 };
 
 // add blank reducers for initial state properties without reducers
