@@ -8,6 +8,9 @@
     "lint": "eslint src/",
     "server": "http-server dist"
   },
+  "engines": {
+    "node": "10.x"
+    },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
