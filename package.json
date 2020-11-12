@@ -10,7 +10,7 @@
   },
   "engines": {
     "node": "10.x"
-    },
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -24,7 +24,6 @@
   "license": "ISC",
   "dependencies": {
     "http-server": "^0.12.1",
-
     "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
