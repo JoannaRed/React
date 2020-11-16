@@ -10,6 +10,10 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  faq: {
+    link: 'https://images.pexels.com/photos/5756624/pexels-photo-5756624.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    title: 'FAQ',
+  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
 };

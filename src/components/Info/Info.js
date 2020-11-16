@@ -1,5 +1,8 @@
 import React from 'react';
 import Container from '../Container/Container';
+//import Hero from '../Hero/Hero';
+//import {settings} from '../../data/dataStore';
+//import styles from './Info.scss';
 
 const Info = () => (
   <Container>
